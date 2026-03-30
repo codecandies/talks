@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show &amp; Tell – Talks</title>
+  <style>
+    :root {
+      --color-bg: #1a1a2e;
+      --color-card: #16213e;
+      --color-accent: #e94560;
+      --color-text: #eaeaea;
+      --color-muted: #9a9ab0;
+      --radius: 8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+    }
+
+    header h1 span {
+      color: var(--color-accent);
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      color: var(--color-muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .talks-list {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .talk-card {
+      background: var(--color-card);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .talk-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .talk-card a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      gap: 1rem;
+    }
+
+    .talk-info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .talk-info p {
+      font-size: 0.875rem;
+      color: var(--color-muted);
+    }
+
+    .talk-arrow {
+      color: var(--color-accent);
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Show <span>&amp;</span> Tell</h1>
+    <p>Präsentationen &amp; Talks</p>
+  </header>
+
+  <main>
+    <h2>Alle Präsentationen</h2>
+    <ul class="talks-list">
+      <li class="talk-card">
+        <a href="neue-ki-tools-werkzeugkasten/">
+          <div class="talk-info">
+            <h3>Neue KI-Tools in unserem Werkzeugkasten</h3>
+            <p>Eine Übersicht moderner KI-Tools und wie wir sie einsetzen können</p>
+          </div>
+          <span class="talk-arrow">→</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Präsentiert mit <a href="https://revealjs.com/" target="_blank" rel="noopener">reveal.js</a></p>
+  </footer>
+</body>
+</html>
