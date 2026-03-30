@@ -16,58 +16,23 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- ── 1. Titelfolie ─────────────────────────────────── -->
-        <section class="title-slide" data-background-gradient="linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)">
-          <h1>Neue KI-Tools in unserem Werkzeugkasten</h1>
-          <p class="subtitle">Show &amp; Tell</p>
-          <br />
-          <p style="font-size: 0.7em; color: #888">Nutze die Pfeiltasten oder <kbd>Space</kbd> zum Navigieren</p>
-        </section>
-
-        <!-- ── 2. Agenda ─────────────────────────────────────── -->
-        <section>
-          <h2>Agenda</h2>
-          <ul>
-            <li class="fragment">🤔 Warum KI-Tools?</li>
-            <li class="fragment">🛠️ Überblick: Die wichtigsten Kategorien</li>
-            <li class="fragment">🔍 Tools im Detail</li>
-            <li class="fragment">💡 Use Cases aus dem Alltag</li>
-            <li class="fragment">⚖️ Chancen &amp; Risiken</li>
-            <li class="fragment">🚀 Nächste Schritte</li>
-          </ul>
-          <div class="slide-footer">KI-Tools | Show &amp; Tell</div>
-        </section>
-
-        <!-- ── 3. Warum KI-Tools? ─────────────────────────────── -->
-        <section>
-          <h2>Warum KI-Tools?</h2>
-          <blockquote>
-            „KI ist kein Ersatz für menschliche Kreativität –<br />
-            aber ein mächtiger Verstärker davon."
-          </blockquote>
-          <ul>
-            <li class="fragment">Routineaufgaben automatisieren</li>
-            <li class="fragment">Ideen schneller validieren</li>
-            <li class="fragment">Kontext on-demand abrufen</li>
-            <li class="fragment">Qualität &amp; Geschwindigkeit steigern</li>
-          </ul>
-          <div class="slide-footer">KI-Tools | Show &amp; Tell</div>
-        </section>
+        <section data-markdown="slides.md"></section>
       </div>
     </div>
 
     <!-- reveal.js core from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
     <script>
       Reveal.initialize({
         hash: true,
-        slideNumber: "c/t",
-        transition: "slide",
-        backgroundTransition: "fade",
+        slideNumber: 'c/t',
+        transition: 'slide',
+        backgroundTransition: 'fade',
         controls: true,
         progress: true,
         center: true,
-        plugins: [],
+        plugins: [RevealMarkdown],
       });
     </script>
   </body>
