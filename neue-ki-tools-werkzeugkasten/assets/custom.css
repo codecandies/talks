@@ -1,0 +1,109 @@
+/* Custom styles for "Neue KI-Tools in unserem Werkzeugkasten" */
+
+/* Import a clean Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+.reveal {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Title slide ────────────────────────────────────────── */
+.reveal .slides section.title-slide {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.reveal .slides section.title-slide h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.reveal .slides section.title-slide p.subtitle {
+  color: #e94560;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 0.5em;
+}
+
+/* ── General slide headings ─────────────────────────────── */
+.reveal h2 {
+  color: #e94560;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(233, 69, 96, 0.3);
+  padding-bottom: 0.2em;
+}
+
+/* ── Tool cards ─────────────────────────────────────────── */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+.tool-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.tool-card:hover {
+  border-color: #e94560;
+}
+
+.tool-card .tool-name {
+  font-weight: 600;
+  color: #e94560;
+  font-size: 0.95em;
+}
+
+.tool-card .tool-desc {
+  font-size: 0.8em;
+  color: #bbb;
+  margin-top: 0.2em;
+  line-height: 1.4;
+}
+
+/* ── Highlight box ──────────────────────────────────────── */
+.highlight-box {
+  background: rgba(233, 69, 96, 0.12);
+  border-left: 4px solid #e94560;
+  border-radius: 4px;
+  padding: 0.6em 1em;
+  margin: 0.75em 0;
+  font-size: 0.9em;
+}
+
+/* ── Quote style ────────────────────────────────────────── */
+.reveal blockquote {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #e94560;
+  padding: 0.75em 1.2em;
+  font-style: italic;
+  color: #ccc;
+  width: 90%;
+  margin: 0.5em auto;
+}
+
+/* ── Lists ──────────────────────────────────────────────── */
+.reveal ul {
+  line-height: 1.8;
+}
+
+.reveal ul li::marker {
+  color: #e94560;
+}
+
+/* ── Footer label ───────────────────────────────────────── */
+.slide-footer {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 0.5em;
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
