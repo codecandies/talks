@@ -8,7 +8,8 @@
     <!-- reveal.js from CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/moon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/simple.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/atom-one-light.css" />
 
     <!-- Custom styles for this talk -->
     <link rel="stylesheet" href="assets/custom.css" />
@@ -16,23 +17,25 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown="slides.md"></section>
+        <section data-markdown="slides.md" data-separator="^---" data-separator-vertical="^--" data-separator-notes="^Note:"></section>
       </div>
     </div>
 
     <!-- reveal.js core from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
     <script>
       Reveal.initialize({
         hash: true,
-        slideNumber: 'c/t',
-        transition: 'slide',
-        backgroundTransition: 'fade',
+        slideNumber: "c/t",
+        transition: "slide",
+        backgroundTransition: "fade",
         controls: true,
         progress: true,
         center: true,
-        plugins: [RevealMarkdown],
+        //view: "scroll",
+        plugins: [RevealMarkdown, RevealHighlight],
       });
     </script>
   </body>
